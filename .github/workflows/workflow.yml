@@ -13,11 +13,11 @@ jobs:
         with:
           registry: ghcr.io
           username: "yaizaromero"
-          password: ${{ secrets.PAT }}
+          password: ${{ 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 }}
     - 
         name: Build and push
         uses: docker/build-push-action@v3
         with:
           context: .
           push: true
-          tags: ghcr.io/yaizaromero/log_predict:1.0
+          tags: ghcr.io/yaizaromero/predictor:1.0
